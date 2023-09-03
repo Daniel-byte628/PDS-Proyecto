@@ -8,7 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "usuarios")
+@Table(name = "restaurante")
 @Getter
 @Setter
 public class RestauranteEntity {
