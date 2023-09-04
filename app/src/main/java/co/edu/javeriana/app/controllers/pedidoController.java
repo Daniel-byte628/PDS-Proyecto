@@ -32,8 +32,6 @@ public class pedidoController {
     private final RestauranteRepository restauranteRepository;
 
 
-    
-
     public pedidoController(PedidoService pedidoService,@Qualifier("fabricaPedidoComida") IPedidoFactory fabricaPedidoComida,
             @Qualifier("fabricaPedidoBebida") IPedidoFactory fabricaPedidoBebida, UsuarioRepository usuarioRepository,
             RestauranteRepository restauranteRepository) {
@@ -43,7 +41,6 @@ public class pedidoController {
         this.usuarioRepository = usuarioRepository;
         this.restauranteRepository = restauranteRepository;
     }
-
 
 
     @PostMapping("/comida")
@@ -57,8 +54,6 @@ public class pedidoController {
 
         IPedido pedido = fabricaPedidoComida.crearPedido(restaurante, usuario);
         pedidoService.procesarPedido(pedido);
-
-        // Aquí puedes guardar el pedido en la base de datos si es necesario
 
         return ResponseEntity.ok("Pedido de comida realizado con éxito.");
     }
