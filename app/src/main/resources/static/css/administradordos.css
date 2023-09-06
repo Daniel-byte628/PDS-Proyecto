@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+}
+
+.primera{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.imagen-izquierda{
+    margin-right: 10%;
+    height: 30vh;
+    margin-left: 0;
+}
+
+
+.boton{
+    border: none;
+    margin-left: 30%;
+    margin-right: 5%;
+    border-radius: 20px;
+    height: 8vh;
+    width: 50vh;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), #FF8A00;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #000;
+    font-family: Hammersmith One, serif;
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 40px;
+    margin-left: 70vh;
+}
+
+.item {
+    margin: 10px;
+    margin-bottom: 10vh;
+    display: flex;
+    align-items: center; /* Centramos verticalmente los elementos */
+}
+
+.imagen {
+    max-width: 20vh;
+    max-height: 15vh;
+    margin-right: 10px; /* Agregamos margen derecho para separar la imagen del texto */
+}
+
+/* Para el texto */
+p {
+    margin: 0; /* Eliminamos el margen superior e inferior del párrafo */
+    color: #000;
+    font-family: Hammersmith One, serif;
+    font-size: 30px;
+    font-weight:bold;
+    line-height: normal;
+    margin-left: 10vh;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-collapse: collapse;
+    border-color: #FF8A00;
+}
+
+th {
+    background-color: #FF8A00;
+    border-bottom: 1px solid black;
+    border: none;
+    padding: 8px;
+    text-align: left;
+    height: 8vh;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Hammersmith One;
+}
+
+
+td{
+    border-bottom: 1px solid black;
+    font-size: 25px;
+    font-family: Hammersmith One;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
