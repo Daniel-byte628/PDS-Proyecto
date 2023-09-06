@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+
+.logo{
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: auto; /* Establece la altura mínima para ocupar toda la pantalla visible */
+}
+
+.imagen1 {
+    width: 40vw;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10vh;
+}
+
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 40px;
+    margin-left: 55vh;
+}
+
+.item {
+    margin: 10px;
+    margin-bottom: 10vh;
+    display: flex;
+    align-items: center; /* Centramos verticalmente los elementos */
+}
+
+.imagen {
+    max-width: 25vh;
+    max-height: 20vh;
+    margin-right: 10px; /* Agregamos margen derecho para separar la imagen del texto */
+}
+
+/* Para el texto */
+p {
+    margin: 0; /* Eliminamos el margen superior e inferior del párrafo */
+    color: #000;
+    font-family: Hammersmith One, serif;
+    font-size: 40px;
+    font-weight:bold;
+    line-height: normal;
+    margin-left: 10vh;
+}
+
+

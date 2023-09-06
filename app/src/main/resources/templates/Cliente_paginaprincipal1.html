@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Principal Cliente</title>
+    <link rel="stylesheet" href="estilos/paginaprincipal1.css">
+</head>
+<body>
+<section class="principal">
+    <div class="navegacion">
+        <img src="img/logo.png" alt="Imagen Izquierda" class="imagen-izquierda">
+        <img src="img/barrabusqueda.png" alt="Imagen Derecha" class="imagen-derecha">
+    </div>
+    <div class="ofertas">
+        <img src="img/oferta1.png" alt="Imagen" class="imagen">
+        <div class="boton-izquierdo">◄</div>
+        <div class="boton-derecho">►</div>
+    </div>
+    <div class="textos">
+        <div class="titulo1 titulo">RESTAURANTES</div>
+        <div class="titulo">ESCOGE UNO</div>
+        <button class="titulo titulo3 boton">EMPIEZA DE NUEVO</button>
+    </div>
+
+    <div th:each="comida : ${comidas}">
+        <div class="rectangulo">
+            <img th:src="${comida.imagenComida}" alt="" width="200" height="200">
+            <img th:src="${comida.logo}" alt="" width="50" height="50">
+            <p th:text="${comida.nombre}"></p>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <button class="botonlista textobotones">Ver Lista</button>
+    <button class="botonpagar textobotones">$0,00
+        PAGAR</button>
+</footer>
+</body>
+</html>

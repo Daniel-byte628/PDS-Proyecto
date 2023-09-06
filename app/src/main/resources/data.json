@@ -1,0 +1,12 @@
+[
+  {
+    "nombre": "Comida 1",
+    "imagenComida": "url_imagen_comida_1.jpg",
+    "logo": "url_logo_1.png"
+  },
+  {
+    "nombre": "Comida 2",
+    "imagenComida": "url_imagen_comida_2.jpg",
+    "logo": "url_logo_2.png"
+  }
+]
