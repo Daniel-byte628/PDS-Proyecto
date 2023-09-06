@@ -24,15 +24,14 @@
             <button class="titulo titulo3 boton">EMPIEZA DE NUEVO</button>
         </div>
         <div class="rectangulo-container">
-            <div th:each="comida, iterStat : ${comidas}">
-                <div class="rectangulo" th:classappend="${iterStat.last} ? 'last-rectangulo' : ''">
+            <div th:each="comida : ${comidas}" class="rectangulo"> 
                     <img th:src="@{${comida.imagenComida}}" alt="Imagen Comida" width="200" height="200">
                     <img th:src="@{${comida.logo}}" alt="Logo" width="50" height="50">
                     <p th:text="${comida.nombre}"></p>
-                </div>
             </div>
+            <div class="clear"></div> <!-- Agrega un div con estilo "clear" al final -->
         </div>
-        
+        <div class="clear"></div> <!-- Agrega un div con estilo "clear" al final -->
     </section>
     <footer>
         <button class="botonlista textobotones">Ver Lista</button>

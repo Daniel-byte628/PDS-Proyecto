@@ -134,13 +134,15 @@ footer {
 .rectangulo-container {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila automáticamente */
-    justify-content: flex-start; /* Alinea los elementos en el extremo izquierdo */
     gap: 20px; /* Espacio entre los elementos */
+    width: auto;
+    border: solid;
+    border-color: red;
 }
 
 /* Estilo para los elementos rectángulo */
 .rectangulo {
-    width: calc(50% - 20px); /* Ancho fijo para dos elementos por fila, con 20px de espacio entre ellos */
+    width: 48%; /* Ancho fijo para dos elementos por fila, con 20px de espacio entre ellos */
     text-align: center; /* Centra el contenido dentro de cada rectángulo */
     border-radius: 20px;
     background: linear-gradient(0deg, rgba(196, 227, 197, 0.20) 0%, rgba(196, 227, 197, 0.20) 100%), #FFFCFC;
@@ -148,6 +150,12 @@ footer {
     margin-bottom: 20px; /* Espacio entre las filas de elementos */
     float: left; /* Hace que los elementos floten a la izquierda */
     clear: none; /* Restablece el comportamiento de compensación (clear) */
+    border: solid;
+    border-color: red;
+}
+/* Aplica un margen inferior al último div .rectangulo-container */
+.clear {
+    margin-bottom: 70vh; /* Agrega el margen inferior deseado */
 }
 
 
